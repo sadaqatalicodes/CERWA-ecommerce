@@ -2,7 +2,6 @@ import React from "react";
 import logo from "../assets/flogo.jpg";
 import { BsFacebook, BsPinterest, BsTwitter, BsYoutube } from "react-icons/bs";
 
-
 const Footer = () => {
   return (
     <>
@@ -10,69 +9,99 @@ const Footer = () => {
         <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
           <div class="md:flex md:justify-between">
             <div class="mb-6 md:mb-0 w-48">
-              <a href="/" class="flex items-center">
-                <img
-                  src={logo}
-                  class="h-[2.5] me-3 w-48"
-                  alt="FlowBite Logo"
-                />
+              <a href="/" class="flex items-center mb-2">
+                <img src={logo} class="h-[2.5] me-3 w-48" alt="FlowBite Logo" />
               </a>
-              <p className="text-gray-400" >Lorem ipsum dolor amet consec, adip elit. Odit alias qui minus fugiat quos am dasdeng streng faskter.</p>
+              <p className="text-gray-400 text-sm">
+                Lorem ipsum dolor amet consec, adip elit. Odit alias qui minus
+                fugiat quos am dasdeng streng faskter. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem.
+              </p>
             </div>
             <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div>
-                <h2 class="mb-6 text-sm font-semibold uppercase text-white">
-                  Resources
-                </h2>
-                <ul class="text-gray-400 font-medium">
-                  <li class="mb-4">
-                    <a href="https://flowbite.com/" class="hover:underline">
-                      Flowbite
+                  <h2 class="mb-6 text-sm font-semibold uppercase text-white">
+                    Quick Links
+                  </h2>
+                <ul class="text-gray-400 font-medium text-sm">
+                  <li class="mb-2">
+                    <a href="/" class="hover:underline">
+                      Home
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="/" class="hover:underline">
+                      Blog
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="/" class="hover:underline">
+                      About
                     </a>
                   </li>
                   <li>
-                    <a href="https://tailwindcss.com/" class="hover:underline">
-                      Tailwind CSS
+                    <a href="/" class="hover:underline">
+                      Contact
                     </a>
                   </li>
                 </ul>
               </div>
               <div>
                 <h2 class="mb-6 text-sm font-semibold uppercase text-white">
-                  Follow us
+                  For Customers
                 </h2>
-                <ul class="text-gray-400 font-medium">
-                  <li class="mb-4">
+                <ul class="text-gray-400 font-medium text-sm">
+                  <li class="mb-2">
                     <a
                       href="https://github.com/themesberg/flowbite"
                       class="hover:underline "
                     >
-                      Github
+                      Order
                     </a>
                   </li>
-                  <li>
+                  <li class="mb-2">
                     <a
                       href="https://discord.gg/4eeurUVvTy"
                       class="hover:underline"
                     >
-                      Discord
+                      Account Details
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a
+                      href="https://discord.gg/4eeurUVvTy"
+                      class="hover:underline"
+                    >
+                      Lost Password
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a
+                      href="https://discord.gg/4eeurUVvTy"
+                      class="hover:underline"
+                    >
+                      Address
                     </a>
                   </li>
                 </ul>
               </div>
               <div>
                 <h2 class="mb-6 text-sm font-semibold uppercase text-white">
-                  Legal
+                  Contact Info
                 </h2>
-                <ul class="text-gray-400 font-medium">
-                  <li class="mb-4">
+                <ul class="text-gray-400 font-medium text-sm">
+                  <li>
                     <a href="#" class="hover:underline">
-                      Privacy Policy
+                      Street Name, City Zip Code
+                    </a>
+                  </li>
+                  <li class="my-2">
+                    <a href="#" class="hover:underline">
+                      123456789
                     </a>
                   </li>
                   <li>
                     <a href="#" class="hover:underline">
-                      Terms &amp; Conditions
+                      contact@support.com
                     </a>
                   </li>
                 </ul>
@@ -89,15 +118,15 @@ const Footer = () => {
               . All Rights Reserved.
             </span>
             <div class="flex mt-4 sm:justify-center sm:mt-0">
-            <a
-            href="/"
-            class="font-medium flex space-x-5 mx-2 md:mx-0 text-gray-400"
-          >
-            <BsTwitter />
-            <BsFacebook />
-            <BsPinterest />
-            <BsYoutube />
-          </a>
+              <a
+                href="/"
+                class="font-medium flex space-x-5 mx-2 md:mx-0 text-gray-400"
+              >
+                <BsTwitter />
+                <BsFacebook />
+                <BsPinterest />
+                <BsYoutube />
+              </a>
             </div>
           </div>
         </div>

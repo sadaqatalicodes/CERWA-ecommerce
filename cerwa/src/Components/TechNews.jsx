@@ -22,21 +22,21 @@ const TechNews = () => {
               class="h-44 md:w-[24rem] w-80"
               src={news1}
             />
-            <h1 className="text-gray-700 font-medium">E-Comerce, Latest E-Commerce, Reatil News</h1>
+            <h1 className="text-gray-700 font-medium mt-3">E-Comerce, Latest E-Commerce, Reatil News</h1>
           </div>
           <div className="text-center mx-6 md:my-0 my-4">
             <img
               class="h-44 md:w-[24rem] w-80"
               src={news2}
             />
-            <h1 className="text-gray-700 font-medium">Where to Read The Latest E-Commerce News</h1>
+            <h1 className="text-gray-700 font-medium mt-3">Where to Read The Latest E-Commerce News</h1>
           </div>
           <div className="text-center">
             <img
               class="h-44 md:w-[24rem] w-80"
               src={news3}
             />
-            <h1 className="text-gray-700 font-medium">The Latest International E-Commerce News</h1>
+            <h1 className="text-gray-700 font-medium mt-3">The Latest International E-Commerce News</h1>
           </div>
         </div>
       </div>
