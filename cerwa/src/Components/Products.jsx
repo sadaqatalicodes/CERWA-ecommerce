@@ -1,12 +1,12 @@
 import React from 'react'
-import product1 from "../assets/01-12.jpg";
-import product2 from "../assets/01-4.jpg";
-import product3 from "../assets/01-13.jpg";
-import product4 from "../assets/01-15.jpg";
-import product5 from "../assets/001.jpg";
-import product6 from "../assets/02-4.jpg";
-import product7 from "../assets/01-9.jpg";
-import product8 from "../assets/02-11.jpg";
+import product1 from "../assets/lap5.jpg";
+import product2 from "../assets/hp1.jpg";
+import product3 from "../assets/w1.jpg";
+import product4 from "../assets/mob1.jpg";
+import product5 from "../assets/hp3.jpg";
+import product6 from "../assets/mob3.jpg";
+import product7 from "../assets/gc1.jpg";
+import product8 from "../assets/lap1.jpg";
 
 const Products = () => {
   return (

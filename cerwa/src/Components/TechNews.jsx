@@ -1,7 +1,7 @@
 import React from "react";
-import news1 from "../assets/01-20.jpg";
-import news2 from "../assets/02-18.jpg";
-import news3 from "../assets/03-6.jpg";
+import news1 from "../assets/ban1.jpg";
+import news2 from "../assets/ban2.jpg";
+import news3 from "../assets/ban3.jpg";
 
 const TechNews = () => {
   return (
@@ -16,7 +16,7 @@ const TechNews = () => {
           <hr className="w-1.5 border-[3px] rounded-3xl border-red-600" />
           <hr className="w-28 border-[2.5px] rounded-3xl border-red-600" />
         </div>
-        <div className="relative m-3 flex flex-wrap mx-auto justify-center">
+        <div className="relative mt-3 gap-4 flex flex-wrap mx-auto justify-center">
           <div className="text-center">
             <img
               class="h-44 md:w-[24rem] w-80"

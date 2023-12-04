@@ -6,10 +6,14 @@ import NewsLetter from '../Components/NewsLetter'
 import LastDeals from '../Components/LastDeals'
 import TechNews from '../Components/TechNews'
 import Footer from '../Components/Footer'
+import TopNav from '../Components/TopNav'
+import Navbar from '../Components/Navbar'
 
 const Home = () => {
   return (
     <>
+    <TopNav/>
+    <Navbar/>
     <Carousels/>
     <Deals/>
     <Products/>

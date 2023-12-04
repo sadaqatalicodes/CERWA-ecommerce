@@ -1,13 +1,19 @@
 import React from "react";
 import logo from "../assets/logo.png"
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const location = useLocation();
+
+  const isActive = (path) => {
+    return location.pathname === path;
+  }
   return (
     <div>
-      <nav class="bg-white shadow-xl border-gray-200 sticky">
+      <nav class="bg-white shadow-md border-gray-200 sticky">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a
-            href="/"
+          <Link
+            to="/"
             class="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <img
@@ -18,7 +24,7 @@ const Navbar = () => {
             {/* <span class="self-center text-2xl font-semibold whitespace-nowrap :text-white">
               CERWA
             </span> */}
-          </a>
+          </Link>
           <div class="flex md:order-2">
             <button
               type="button"
@@ -180,45 +186,55 @@ const Navbar = () => {
             </div>
             <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 uppercase :border-gray-700">
               <li>
-                <a
-                  href="#"
-                  class="block py-2 px-3 text-white bg-red-700 rounded md:bg-transparent md:text-red-700 md:p-0 md::text-red-500"
+                <Link
+                  to="/headphones"
+                  className={`block py-2 px-3 text-gray-900  hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-600 md:p-0 md::hover:text-red-500 md::hover:bg-transparent ${
+                    isActive('/headphones') ? 'sm:border-b-2 sm:border-red-500' : ''
+                  }`}
                   aria-current="page"
                 >
                   Headphones
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
-                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-700 md:p-0 md::hover:text-red-500 :text-white :hover:bg-gray-700 :hover:text-white md::hover:bg-transparent :border-gray-700"
+                <Link
+                  to="/gameconsole"
+                  className={`block py-2 px-3 text-gray-900  hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-600 md:p-0 md::hover:text-red-500 md::hover:bg-transparent ${
+                    isActive('/gameconsole') ? 'sm:border-b-2 sm:border-red-500' : ''
+                  }`}
                 >
                   Game Console
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
-                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-700 md:p-0 :text-white md::hover:text-red-500 :hover:bg-gray-700 :hover:text-white md::hover:bg-transparent :border-gray-700"
+                <Link
+                  to="/laptop"
+                  className={`block py-2 px-3 text-gray-900  hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-600 md:p-0 md::hover:text-red-500 md::hover:bg-transparent ${
+                    isActive('/laptop') ? 'sm:border-b-2 sm:border-red-500' : ''
+                  }`}
                 >
                   laptop
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
-                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-700 md:p-0 :text-white md::hover:text-red-500 :hover:bg-gray-700 :hover:text-white md::hover:bg-transparent :border-gray-700"
+                <Link
+                  to="/mobiles"
+                  className={`block py-2 px-3 text-gray-900  hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-600 md:p-0 md::hover:text-red-500 md::hover:bg-transparent ${
+                    isActive('/mobiles') ? 'sm:border-b-2 sm:border-red-500' : ''
+                  }`}
                 >
                   mobile
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
-                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-700 md:p-0 :text-white md::hover:text-red-500 :hover:bg-gray-700 :hover:text-white md::hover:bg-transparent :border-gray-700"
+                <Link
+                  to="/watches"
+                  className={`block py-2 px-3 text-gray-900  hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-600 md:p-0 md::hover:text-red-500 md::hover:bg-transparent hover:border-red-500 hover:border-b-2 ${
+                    isActive('/watches') ? 'sm:border-b-2 sm:border-red-500' : ''
+                  }`}
                 >
                   smart watch
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

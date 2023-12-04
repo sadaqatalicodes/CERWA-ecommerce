@@ -1,10 +1,9 @@
 import React from "react";
-import { BsArrowReturnLeft, BsCart, BsHouse } from "react-icons/bs";
 
 const NewsLetter = () => {
   return (
     <>
-      <div class="my-">
+      <div class="mb-">
         <div class="relative isolate overflow-hidden bg-gray-900 px-6 py-6 shadow-2xl sm:px-24 xl:py-12">
           <h2 class="mx-auto max-w-2xl text-center text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Keep Updated
@@ -64,30 +63,6 @@ const NewsLetter = () => {
             </defs>
           </svg>
         </div>
-        <div className="flex justify-around mx-2 text-center">
-          <div className="">
-            <BsCart className="text-4xl text-gray-700 mx-auto mt-4" />
-            <h1 className="text-2xl font-semibold my-4">Piriority Shipping</h1>
-            <p className="text-md font-medium text-gray-600">
-              Lorem ipsum dolor sit amet consectetur adipisicing.
-            </p>
-          </div>
-          <div className="border-l-2 jus">
-            <BsArrowReturnLeft className="text-4xl text-gray-700 mx-auto mt-4" />
-            <h1 className="text-2xl font-semibold my-4">Free Return</h1>
-            <p className="text-md font-medium text-gray-600">
-              Lorem ipsum dolor sit amet consectetur adipisicing.
-            </p>
-          </div>
-          <div className="border-l-2">
-            <BsHouse className="text-4xl text-gray-700 mx-auto mt-4" />
-            <h1 className="text-2xl font-semibold my-4">In-home Setup</h1>
-            <p className="text-md font-medium text-gray-600">
-              Lorem ipsum dolor sit amet consectetur adipisicing.
-            </p>
-          </div>
-        </div>
-          <hr className="border border-gray-300"/>
       </div>
     </>
   );

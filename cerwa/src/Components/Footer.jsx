@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from 'react';
 import logo from "../assets/flogo.jpg";
 import { BsFacebook, BsPinterest, BsTwitter, BsYoutube } from "react-icons/bs";
 
 const Footer = () => {
+  const [activeTab, setActiveTab] = useState(1);
+
+  const handleTabClick = (tabNumber) => {
+    setActiveTab(tabNumber);
+  };
   return (
     <>
       <footer class="bg-black">

@@ -10,7 +10,7 @@ const Carousels = () => {
   return (
     <>
      <div className="h-56 sm:h-64 xl:h-80 2xl:h-96 rounded-2xl ">
-      <Carousel pauseOnHover>
+      <Carousel>
         <img className='h-56 sm:h-64 xl:h-80' src={poster1} alt="..." />
         <img className='h-56 sm:h-64 xl:h-80' src={poster2} alt="..." />
         <img className='h-56 sm:h-64 xl:h-80' src={poster3} alt="..." />
