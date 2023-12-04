@@ -188,7 +188,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/headphones"
-                  className={`block py-2 px-3 text-gray-900  hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-600 md:p-0 md::hover:text-red-500 md::hover:bg-transparent ${
+                  className={`block py-2 px-3 text-gray-900  hover:bg-gray-100 md:hover:bg-transparent md:p-0 md::hover:text-red-500 md::hover:bg-transparent md:hover:border-red-500 md:hover:border-b-2 ${
                     isActive('/headphones') ? 'sm:border-b-2 sm:border-red-500' : ''
                   }`}
                   aria-current="page"
@@ -199,7 +199,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/gameconsole"
-                  className={`block py-2 px-3 text-gray-900  hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-600 md:p-0 md::hover:text-red-500 md::hover:bg-transparent ${
+                  className={`block py-2 px-3 text-gray-900  hover:bg-gray-100 md:hover:bg-transparent md:p-0 md::hover:text-red-500 md::hover:bg-transparent md:hover:border-red-500 md:hover:border-b-2 ${
                     isActive('/gameconsole') ? 'sm:border-b-2 sm:border-red-500' : ''
                   }`}
                 >
@@ -209,7 +209,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/laptop"
-                  className={`block py-2 px-3 text-gray-900  hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-600 md:p-0 md::hover:text-red-500 md::hover:bg-transparent ${
+                  className={`block py-2 px-3 text-gray-900  hover:bg-gray-100 md:hover:bg-transparent md:p-0 md::hover:text-red-500 md::hover:bg-transparent md:hover:border-red-500 md:hover:border-b-2 ${
                     isActive('/laptop') ? 'sm:border-b-2 sm:border-red-500' : ''
                   }`}
                 >
@@ -219,7 +219,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/mobiles"
-                  className={`block py-2 px-3 text-gray-900  hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-600 md:p-0 md::hover:text-red-500 md::hover:bg-transparent ${
+                  className={`block py-2 px-3 text-gray-900  hover:bg-gray-100 md:hover:bg-transparent md:p-0 md::hover:text-red-500 md::hover:bg-transparent md:hover:border-red-500 md:hover:border-b-2 ${
                     isActive('/mobiles') ? 'sm:border-b-2 sm:border-red-500' : ''
                   }`}
                 >
@@ -229,7 +229,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/watches"
-                  className={`block py-2 px-3 text-gray-900  hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-600 md:p-0 md::hover:text-red-500 md::hover:bg-transparent hover:border-red-500 hover:border-b-2 ${
+                  className={`block py-2 px-3 text-gray-900  hover:bg-gray-100 md:hover:bg-transparent md:p-0 md::hover:text-red-500 md::hover:bg-transparent md:hover:border-red-500 md:hover:border-b-2 ${
                     isActive('/watches') ? 'sm:border-b-2 sm:border-red-500' : ''
                   }`}
                 >
