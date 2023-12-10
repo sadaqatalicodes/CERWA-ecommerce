@@ -12,15 +12,12 @@ import Navbar from '../Components/Navbar'
 const Home = () => {
   return (
     <>
-    <TopNav/>
-    <Navbar/>
     <Carousels/>
     <Deals/>
     <Products/>
     <NewsLetter/>
     <LastDeals/>
     <TechNews/>
-    <Footer/>
     </>
   )
 }

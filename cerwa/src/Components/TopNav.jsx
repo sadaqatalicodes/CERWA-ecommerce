@@ -1,5 +1,6 @@
 import React from "react";
 import { BsFacebook, BsPinterest, BsTwitter, BsYoutube } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const TopNav = () => {
   return (
@@ -7,7 +8,7 @@ const TopNav = () => {
       <nav class="bg-gray-900 border-gray-200">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2.5">
           <a
-            href="/"
+            to="/"
             class="font-medium flex space-x-5 mx-2 md:mx-0 text-gray-300"
           >
             <BsTwitter />
@@ -42,37 +43,37 @@ const TopNav = () => {
           <div class="hidden w-full md:block md:w-auto" id="navbar-default">
             <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-5 rtl:space-x-reverse md:mt-0 ">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/blog"
                   class="block py-2 px-3 text-gray-300 md md:p-0"
                   aria-current="page"
                 >
                   Blog
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/cart"
                   class="block py-2 px-3 text-gray-300 md md:p-0"
                 >
-                  My Account
-                </a>
+                  Cart
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/whishlist"
                   class="block py-2 px-3 text-gray-300 md md:p-0"
                 >
                   Whishlist
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/contact"
                   class="block py-2 px-3 text-gray-300 md md:p-0"
                 >
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

@@ -31,7 +31,7 @@ const Navbar = () => {
               data-collapse-toggle="navbar-search"
               aria-controls="navbar-search"
               aria-expanded="false"
-              class="md:hidden text-gray-500 :text-gray-400 hover:bg-gray-100 :hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 :focus:ring-gray-700 rounded-lg text-sm p-2.5 me-1"
+              class="md:hidde hover:text-red-700  focus:outline-none rounded-lg text-sm p-2.5 me-1"
             >
               <svg
                 class="w-5 h-5"
@@ -50,7 +50,7 @@ const Navbar = () => {
               </svg>
               <span class="sr-only">Search</span>
             </button>
-            <div class="relative hidden md:block mr-4">
+            <div class="relative hidden  mr-4">
               <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
                 <svg
                   class="w-4 h-4 text-gray-500 :text-gray-400"
@@ -76,8 +76,11 @@ const Navbar = () => {
                 placeholder="Search..."
               />
             </div>
-            <div class="hidden xl:flex items-center space-x-5">
-              <a class=" hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-700" href="#">
+            
+                                    {/* .........Navbar Icons.......... */}
+
+            <div class="flex items-center space-x-5">
+              <Link class=" hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-700" to="/whishlist">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-6 w-6"
@@ -92,8 +95,8 @@ const Navbar = () => {
                     d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
                   />
                 </svg>
-              </a>
-              <a class="flex items-center  hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-700" href="#">
+              </Link>
+              <Link class="flex items-center  hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-700" to="/cart">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-6 w-6"
@@ -112,8 +115,8 @@ const Navbar = () => {
                   <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-red-400 opacity-75"></span>
                   <span class="relative inline-flex rounded-full h-3 w-3 bg-red-700"></span>
                 </span>
-              </a>
-              <a class="flex items-center hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-700" href="#">
+              </Link>
+              <Link class="flex items-center hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-700" to="/account">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-6 w-6 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-700"
@@ -128,12 +131,13 @@ const Navbar = () => {
                     d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                   />
                 </svg>
-              </a>
+              </Link>
             </div>
+                                    {/*..........main menu............. */}
             <button
               data-collapse-toggle="navbar-search"
               type="button"
-              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 :text-gray-400 :hover:bg-gray-700 :focus:ring-gray-600"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
               aria-controls="navbar-search"
               aria-expanded="false"
             >
@@ -155,36 +159,14 @@ const Navbar = () => {
               </svg>
             </button>
           </div>
+
+                             {/* ..............Navbar Links............... */}
+
           <div
-            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1"
             id="navbar-search"
           >
-            <div class="relative mt-3 md:hidden">
-              <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                <svg
-                  class="w-4 h-4 text-gray-500 :text-gray-400"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
-                  />
-                </svg>
-              </div>
-              <input
-                type="text"
-                id="search-navbar"
-                class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-red-500 focus:border-red-500 :bg-gray-700 :border-gray-600 :placeholder-gray-400 :text-white :focus:ring-red-500 :focus:border-red-500"
-                placeholder="Search..."
-              />
-            </div>
-            <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 uppercase :border-gray-700">
+            <ul class="flex flex-col p-4 md:p-0 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row lg:mt-0 md:border-0 uppercase">
               <li>
                 <Link
                   to="/headphones"

@@ -1,7 +1,4 @@
 import React from 'react'
-import TopNav from "../Components/TopNav";
-import Navbar from "../Components/Navbar";
-import Footer from "../Components/Footer";
 import product1 from "../assets/mob1.jpg";
 import product2 from "../assets/mob2.jpg";
 import product3 from "../assets/mob3.jpg";
@@ -14,8 +11,6 @@ import product8 from "../assets/mob1-1.jpg";
 const Mobiles = () => {
   return (
     <>
-     <TopNav />
-      <Navbar />
       <div class=" bg-gray-100 flex flex-col justify-center">
         <h1 className="text-center mt-10 text-4xl font-semibold text-gray-800">
           Buy <span className="text-red-600 font-bold">Mobile Phones</span>
@@ -419,7 +414,6 @@ const Mobiles = () => {
           </div>
         </div>
       </div>
-   <Footer />
     </>
   )
 }
